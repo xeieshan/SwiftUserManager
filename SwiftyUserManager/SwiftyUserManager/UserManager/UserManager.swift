@@ -97,7 +97,8 @@ public class UserManager {
         catch {
             print("Failed to Delete user File")
         }
-        UserManager.setCurrentUser(newCurrentUser: nil)
+//        UserManager.setCurrentUser(newCurrentUser: nil)//
+        _currentUser = nil
     }
     
     class public func logOutUserAndClearToken() {
